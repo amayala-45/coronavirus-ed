@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Menu Desplegable</title>
+		<style type="text/css">
+			
+			* {
+				margin:0px;
+				padding:0.5px;
+			}
+			
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav {
+				width:700px; /*Le establecemos un ancho*/
+				margin:3 auto; /*Centramos automaticamente*/
+			}
+ 
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#EE82EE;
+				color:black;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:yellow;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			
+		</style>
+	</head>
+	<body background="img/13.jpg">
+		<hr color="yellow">
+		<br>
+		<img src="img/1.jpg"  WIDTH=200 HEIGHT=100 align="left">
+		<div id="header">
+			<nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
+				<ul class="nav">
+					<li><a href="covid.html"TARGET=yoyo>Que es el covid-19</a></li>
+					<li><a href="">Información..</a>
+						<ul>
+							<li><a href="corren.html"TARGET=yoyo>Quiénes corren riesgo</a></li>
+							<li><a href="comop.html"TARGET=yoyo>Cómo proteger a su familia</a></li>
+							<li><a href="hogar.html"TARGET=yoyo>Cuidados.</a></li>
+								<ul>
+									
+									
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="">Cómo lidear con esta situación</a>
+						<ul>
+							<li><a href="lidear.html"TARGET=yoyo>Como lidear estos cierres de esculas.</a></li>
+							<li><a href="niños.html"TARGET=yoyo>Cómo hablar con los ñinos sobre covid-19</a></li>
+							<ul>
+								
+							</ul>
+						</ul>
+					</li>
+					<li><a href="">celula del virus</a>
+						<ul>
+							<li><li><a href="virus.html"TARGET=yoyo> Celula del virus</a></li>
+							
+						</li>
+					</li>
+				</ul>
+
+
+			</nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
+		</div>
+		<BR>
+		<BR>
+		<BR> 
+		<BR>
+		<BR>
+		<BR>
+		
+	</body>
+</html>
